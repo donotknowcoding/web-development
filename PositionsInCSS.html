@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            /* margin: auto; */
+            /* top: 30px; */
+        }
+        .container{
+            padding: 5%;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            height: 2000px;   
+        }
+        /* Positions in CSS: Fixed, relative, absolute, sticky, static(default). I have shown all postion with the help of boxes */
+        #box1{
+            Position: static;
+
+            /* Above line keep boxes static which comes as a default */
+        }
+        #box2{
+            Position: absolute;
+            top: 34px;
+            /* left: 134px; */
+            /* Above line shift the box to its parent container(here) if applied. */
+        }
+        #box3{
+            Position: sticky;
+            top: 134px;
+            left: 500px;
+        }
+        #box4{
+            position: relative;
+            /* right: 30px; */
+            /* margin: right; */
+            left: 300px;
+        }
+        #box5{
+            position: fixed;
+            /* top:0%; */
+            right: 5px;
+            bottom: 0%;
+            /* top: 500px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1. This is static box.</div>
+        <div class="box" id="box2">2. This is absolute box.</div>
+        <div class="box" id="box3">3. This is sticky box.</div>
+        <div class="box" id="box4">4. This is relative box.</div>
+        <div class="box" id="box5">Chat with Us. This box is fixed.</div
+    </div>
+</body>
+</html>

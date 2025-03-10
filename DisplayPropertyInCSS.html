@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property in CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            border: 3px solid red;
+            width: auto;
+            background-size: contain;
+
+        }
+
+        img {
+
+            overflow: hidden;
+            width: 100%;
+            /* padding: 20px; */
+            display: block;
+            margin: auto;
+        }
+
+        h3 {
+            margin: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            /* margin: 20px 60px; */
+            text-align: center;
+        }
+
+        .box {
+            margin: 7px 0px;
+            /* overflow: hidden; */
+            border: 3px solid black;
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 10px auto;
+            width: auto;
+            background-size: contain;
+            border: 2px solid purple;
+            box-sizing: content-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="skydiving1.jpg" alt="" width="500" height="300">
+        <h3>This is My Skydiving Blog.</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates dolores explicabo sint
+                consequatur esse animi ea facere nesciunt doloremque officia repudiandae odit dignissimos iste similique
+                laudantium, voluptatibus amet veritatis praesentium. Similique, ipsum! Officia quaerat expedita
+                distinctio nesciunt ipsum ex nostrum placeat sapiente quia!</h4>
+        </div>
+        <div class="box">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates dolores explicabo sint
+                consequatur esse animi ea facere nesciunt doloremque officia repudiandae odit dignissimos iste similique
+                laudantium, voluptatibus amet veritatis praesentium. Similique, ipsum! Officia quaerat expedita
+                distinctio nesciunt ipsum ex nostrum placeat sapiente quia!</h4>
+        </div>
+        <div class="box">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates dolores explicabo sint
+                consequatur esse animi ea facere nesciunt doloremque officia repudiandae odit dignissimos iste similique
+                laudantium, voluptatibus amet veritatis praesentium. Similique, ipsum! Officia quaerat expedita
+                distinctio nesciunt ipsum ex nostrum placeat sapiente quia!</h4>
+        </div>
+    </div>
+</body>
+
+</html>

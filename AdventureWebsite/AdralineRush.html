@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Your Adraline</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("ADVENTURE1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .first {
+            border: none;
+            margin: 0%;
+            height: 80px;
+            overflow: auto;
+            background-color: rgba(55, 105, 244, 0.52);
+            background-size: contain;
+        }
+
+        h3 {
+            /* text-decoration: underline;
+            text-decoration-color: rgb(56, 130, 130);
+            text-decoration-thickness: 5px ; */
+            display: inline-block;
+            border: none;
+            margin: 10px;
+            position: fixed;
+            padding: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 200%;
+            color: rgb(240, 233, 233);
+        }
+
+        .first a {
+            float: right;
+            padding: 15px;
+            /* position: fixed; */
+            /* border: 2px solid black; */
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100%;
+            color: rgb(240, 233, 233);
+            /* top: 40px; */
+            right: 20px;
+            /* border: 2px solid black; */
+            text-decoration: none;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            float: left;
+            border: none;
+            text-decoration: none;
+            padding: 7px;
+            top: none;
+            /* margin: 5px; */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0px;
+            /* border: 2px solid black;  */
+            background-size: contain;
+            height: 50px;
+        }
+
+        .navbar ul {
+            background-color: rgba(234, 124, 15, 0.937);
+            margin: 0px;
+            overflow: auto;
+        }
+
+        .form{
+            background-color: rgba(0, 119, 255, 0.639);
+            border: solid black 2px;
+            display: inline-block;
+            right: 100px;
+            position: fixed;
+            margin-top: 30px;
+        }
+        .form li{
+            list-style: none;
+            padding: 3px;
+        }
+        .form ul li label {
+            list-style: none;
+            display: inline-block;
+            position: static;
+            /* right: 20px;  */
+        } 
+        .form li input{
+            margin-left: 200px;
+            border: 2px solid black;
+            display: inline-block; 
+            margin: 5px;
+        }
+        .label1{
+            display: block;
+
+        }
+        
+        .form li {
+            : 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="backend.php"></form>
+    <div class="first">
+        <h3>Welcome to Adraline Junkies</h3>
+        <a href="#">Customer Support</a>
+        <a href="#">Login</a>
+    </div>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="nav">Home</a></li>
+                <li><a href="#" class="nav">Sports</a></li>
+                <li><a href="#" class="nav">Blogs</a></li>
+                <li><a href="#" class="nav">About Us</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <div class="form">
+        <h4>Sign Up</h4>
+        <ul>
+            <li>
+                <label for="name" class="label1">Name :</label>
+                <input type="text" , name="myName" , id="name", class="myName">
+            </li>
+            
+            <li>
+                <label for="age" class="label2">Age :</label>
+                <input type="text" , name="myAge" , id="age" class="myAge">
+            </li>
+            
+            <li>
+                <label for="occupation" class="label3">Occupation :</label>
+                <input type="text" , name="occupatione" , id="occupation", class="myOccupation">
+            </li>
+            
+            <li>
+                <label for="mobile" class="label4">Mobile :</label>
+                <input type="number" , name="Mobile" , id="mobile", class="myMobile">
+            </li>
+            
+            <li>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset">
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

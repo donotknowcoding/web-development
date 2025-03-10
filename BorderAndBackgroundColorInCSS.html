@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDERS AND BACKGROUND IN CSS</title>
+    <style>
+        #firstParagraph{
+            background-color: burlywood;
+            height : 100px;
+            width: 400px;
+            border-width: 5px;
+            border-color: blue;
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        #secondParagraph{
+            background-color: chocolate;
+            height: 100px;
+            width: 400px;
+            border-width: 5px;
+            border-top: 3px solid green;
+            border-left: 3px solid blue;
+            border-right: 3px solid red;
+            border-bottom: 3px solid orchid;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 25px;
+        }
+
+        #thirdParagraph{
+            height: 500px;
+            width: 400px;
+            background-image: url("skydiving1.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        } /* There are many other properties also available on background. you can refer them from learning*/
+    </style>
+</head>
+<body>
+    <h4>This is first heading.</h4>
+    <p id="firstParagraph">This is paragraph.</p>
+
+    <h3>This is second heading.</h3>
+    <p id="secondParagraph">This is paragraph.</p>
+
+    <h2>This is third heading.</h2>
+    <p id="thirdParagraph">This is paragraph.</p>
+</body>
+</html>

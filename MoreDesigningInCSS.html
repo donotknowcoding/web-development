@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(185, 225, 144);
+            margin: 40px auto;
+            width: 1000px;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 14px;
+        }
+        /* Under mentioned selectors are psuedo selectors available in CSS. These are used to define multiple properties. */
+        a:hover{
+            color: rgb(12, 14, 15);
+        }
+        a:active{
+            background-color: yellow;
+        }
+        a:visited{
+            background-color: azure;
+
+        }
+        .btn{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            background-color: rgb(231, 109, 109);
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            font-size: 13px;
+            border-radius: 4px;
+            margin: 5px 10 px; 
+            border: 2px solid blue;
+            
+        }
+        .btn:hover{
+            background-color: beige;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cum vero accusamus, dolores sed quos in odit vitae quibusdam soluta labore consectetur similique doloremque reprehenderit minima at expedita ratione quod magnam! Eius, quos eaque.</p>    
+        <a class="btn" href="https://www.google.com">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

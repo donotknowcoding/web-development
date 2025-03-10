@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors In CSS</title>
+    <style>
+        #firstPara{
+         color: blueviolet;   
+         background-color: beige; /* Color by name.*/
+        }
+
+        #secondPara{
+         color: rgb(43, 255, 69);   /* this is called RGB value of colors*/
+         background-color: rgb(68, 85, 75);
+        }
+
+        #thirdPara{
+         color: #a45325;   /* this is called hex value of colors*/
+         background-color: #2c2e3e;
+        }
+        #firstSpan{
+            background-color:aqua ;
+        }
+        #secondSpan{
+            background-color: burlywood;
+        }
+        #thirdSpan{
+            background-color: chartreuse; /*We can limit background border by using span instead of paragraph element. Refer this web page.*/
+        }
+</style>
+</head>
+<body>
+    <h2>This is First box.</h2>
+    <p id="firstPara">This is paragraph from first box.</p>
+    <span id="firstSpan">This is first span.</span>
+    <h3>This is Second box.</h2>
+    <p id="secondPara">This is paragraph from second box.</p>
+    <span id="secondSpan">This is second span.</span>
+    <h4>This is Third box.</h2>
+    <p id="thirdPara">This is paragraph from third box.</p>
+    <span id="thirdSpan">This is third span.</span>
+</body>
+</html>

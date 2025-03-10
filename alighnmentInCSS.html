@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alighnment in CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /*We use float for alignment in CSS*/ 
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'ubuntu', sans-serif;        }
+        .container{
+            width: 1800px;
+            border: solid blueviolet;
+            margin: 50px auto;
+            border-radius: 50px;
+            text-align: center;
+            background-color: sandybrown;
+        }
+        .item{
+            border: 5px solid rgb(139, 10, 10);
+            margin: 40px 50px;
+            padding: 35px 45px;
+        }
+        #fruits{
+            float: right;
+            width: 40%;
+            background-color: rgb(244, 252, 15);
+        }
+        #computer{
+            float:left;
+            width: 40%;
+            background-color: rgb(244, 252, 15);
+        }
+        #stationary{
+            /* clear: left; */
+            clear: right;
+            background-color: rgb(244, 252, 15);
+            /* float: left; */
+            /* width: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item" >
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore itaque eum voluptates adipisci officiis exercitationem repudiandae. Qui voluptas natus sed quae eum incidunt, cum corporis eligendi vero? Sed, fugit.
+            </p>
+        </div>
+        <div id="computer" class="item" >
+            <h2>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore itaque eum voluptates adipisci officiis exercitationem repudiandae. Qui voluptas natus sed quae eum incidunt, cum corporis eligendi vero? Sed, fugit.
+            </p>
+        </div>
+        <div id="stationary" class="item" >
+            <h1>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore itaque eum voluptates adipisci officiis exercitationem repudiandae. Qui voluptas natus sed quae eum incidunt, cum corporis eligendi vero? Sed, fugit.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

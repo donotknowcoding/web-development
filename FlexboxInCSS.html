@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 600px;
+            width: 100%;
+            /*Flex properties for flex container.*/
+            display: flex; /* This is flex property of CSS. which makes CSS super easy. Apply under mentioned properties in this page you will find the meaning.*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse;  */
+            /* flex-wrap: wrap; This makes UI responsive as per display requirement. It has two properties wrap and wrap-reverse.
+            flex-flow: row wrap;Flex-flow is the combination of flex-direction and flex-flow. */
+
+            /*Justify-content is the property by which we can justify the content in diffrent manner with the help of its value.*/
+            /* justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between; */
+
+            /*align-items property can alighn item in container vertically.*/
+            /* align-items: center;
+            align-items: flex-end;
+            justify-content: center; */
+            
+        }
+        .item{
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+        }
+        #item1{
+            /*These are flex item properties.*/
+            /* order: 5;This property defines the order of item. as mentioned here. */
+            /*flex-grow property is responsible to stretch the particular item of the container. Negetive integers are invalid here.*/
+            /*flex-grow property is responsible to stretch the particular item of the container. Negetive integers are invalid here.*/
+            /* flex-grow: 3; */
+            /*flex shrink is quite opposite to flex grow. Try it yourself*/
+            /*flex-basis is the property to target height and width of the item. If flex-direction is set to row it will control width otherwise height.*/
+            /* flex-basis: 500px; */
+            /*Under mentioned property is the short hand in flexbox as flex: flex-grow flex-shrink flex-basis;*/
+            /* flex: 2 2 600px; */
+            /* align slef is the property which target items in a container. It use to apply for individual item. */
+            /* align-self: flex-end;
+            align-self: flex-start; */
+            /* align-self: center; */
+
+        }
+        #item2{
+        /* flex-grow: 2; */
+        }
+        #item3{
+        /* flex-grow: 1; */
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is Flexbox</h3>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+</body>
+</html>

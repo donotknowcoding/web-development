@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+</head>
+<style>
+    #box1{
+        /* Z-Index is a term used to define which element will overlap and which will underlap. Higher Z-Index value element will overlap and lower will underlap. This do not work with default position i.e static but will work with other positions i.e absolute, relative and sticky. Example is box1 red is overlapping the green one because i have define z-index value more than the value of red one.*/
+        
+        /*visibility: hidden; Visibility keeps the space of this box1 if we hide it. Where as display:none vanish the space also. as shown in box2*/
+        z-index: +1;
+        position: relative;
+        height: 200px;
+        width: 200px;
+        top: 50px; 
+        border: 2px solid black;
+        background-color: red;
+    }
+    #box2{ 
+        /* display: none;       */
+        z-index: 0;
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: rgb(2, 144, 2);
+    }
+    
+    #box3{        
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: rgb(11, 24, 165);
+    }
+    
+    #box4{        
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: rgb(246, 255, 0);
+    }
+
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>    
+</body>
+</html>

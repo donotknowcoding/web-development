@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Panel</title>
+    <style>
+        .navbar{
+            background-color: brown;
+            border-radius: 25px;
+            width: 1500px;
+            
+        }
+        .navbar ul{
+            overflow: auto;/*This line is written as above mentioned background color not visible due under mentioned float property. this line correct the overflow property of under mentioned line.*/
+        }
+        .navbar li a{
+            padding: 10px 15px;
+            text-decoration-line: none;
+            color: aliceblue;
+        }
+        .navbar li a:hover{
+            background-color: burlywood;
+            border-radius: 20px;
+        }
+        .navbar li{
+            padding: 18px;
+            color: white;
+            float: left;
+            list-style: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .search{
+            float: right;
+            padding: 15px;
+            border-radius: 5px;
+
+        }
+        .navbar input{
+            border: 1px solid rgb(179, 51, 51);
+            color: solid white;
+            background-color: rgb(212, 199, 199);
+            cursor: default;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

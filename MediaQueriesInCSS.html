@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in CSS</title>
+    <style>
+        .box{
+            background-color: red;
+            font-size: 72px;
+            text-align: center;
+            color: black;
+            display: none;
+        }
+        
+        @media (max-width: 300px){
+            #box-1{
+                background-color: aqua;
+                color: black;
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            #box-2{
+                background-color: purple;
+                color: white;
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px){
+            #box-3{
+                background-color: rgb(255, 242, 0);
+                color: black;
+                display: block;
+            }
+        }
+        @media only screen and (min-width: 800px) and (max-width: 1600px) {
+            #box-4{
+                background-color: rgb(47, 255, 0);
+                color: black;
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+            #box-5{
+                background-color: rgb(255, 0, 191);
+                color: black;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Akshat cyan color ka janwar hai.</div>
+    <div class="box" id="box-2">Akshat purple color ka janwar hai.</div>
+    <div class="box" id="box-3">Akshat yellow color ka janwar hai.</div>
+    <div class="box" id="box-4">Akshat green color ka janwar hai.</div>
+    <div class="box" id="box-5">i am a titan so big and black.</div>
+</body>
+</html>

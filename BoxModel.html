@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            /* This is a universal selector in CSS. This will apply on all elements untill you override them in below container. */
+
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            background-image: url(skydiving1.jpg);
+            background-size: cover;
+            background-repeat: no repeat;
+        }
+
+        h4{
+            color: brown;
+            font-size: 50px;
+            line-height: 100px;
+        }
+        
+        h3{
+            color: rgb(241, 98, 15);
+            font-size: 50px;
+            line-height: 100px;
+        }h2{
+            color: rgb(28, 0, 238);
+            font-size: 50px;
+            line-height: 100px;
+        }
+        
+        .container{
+            
+            font-size: 30px;
+            /*background-color: rgb(179, 144, 185, 0);*/
+            border: 5px solid #ffa800;
+            border-radius: 50px;
+            /*padding-top: 80px;
+            padding-left: 30px;
+            padding-right: 40px;
+            padding-bottom: 80px;*/
+            /*We can write padding in one line also. as given above and same can be done with margin as well. We can write padding as padding : y(top/bottom), x(left/right); axis wise.*/
+            padding: 80px 30px 40px 80px;
+
+            margin-top: 40px;
+            margin-left: 34px;
+            margin-right: 34px;
+            margin-bottom: 40px;
+            width: 1000px;
+            box-sizing: border-box; /*This will fix your box size if you opt for border-box option.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>This is my heading.</h4>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sequi? Nostrum fugit maxime sapiente praesentium doloribus dolor ea expedita consectetur quos architecto corrupti molestias aperiam, minus, qui iste iusto magni.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading.</h4>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sequi? Nostrum fugit maxime sapiente praesentium doloribus dolor ea expedita consectetur quos architecto corrupti molestias aperiam, minus, qui iste iusto magni.</p>
+    </div>
+    <div class="container">
+        <h2>This is my heading.</h4>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sequi? Nostrum fugit maxime sapiente praesentium doloribus dolor ea expedita consectetur quos architecto corrupti molestias aperiam, minus, qui iste iusto magni.</p>
+    </div>
+</body>
+</html>

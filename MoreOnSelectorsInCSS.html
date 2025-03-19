@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            font-size: 30px;
+            color: white;
+        }
+
+        div li p{
+            background-color: greenyellow;
+            color: black;
+            font-size: 30px;
+        }
+
+        div > p{/*This command affect paragraphs comes direct under div*/
+            background-color: rgb(222, 52, 182);
+            color: white;
+            font-size: 30px;
+
+        }
+
+        div + p{
+            background-color: purple;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading and it is a basic selector. here heading can be targeted direct using 'h1' from style sheet.</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is another paragraph inside li and this will be targeted by div li p in style sheet.</p>
+                </li>
+            </ul>
+            <p>This is a paragraph which is target here by div > p command in style sheet as this comes direct under div and below mentioned paragraph is also a direct child of div and also targeted here.</p>
+        </div>
+        <p>This is another paragraph.</p>
+    </div>
+    <p> This is outermost paragraph and this comes direct under body tag so div + p command will target this. this command target those which comes direct after div. </p>
+</body>
+</html>

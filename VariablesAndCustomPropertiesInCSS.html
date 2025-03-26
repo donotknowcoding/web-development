@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties in CSS</title>
+    <style>
+        /* Under mentioned is the line which helps us define variables globally otherwise we cant use variables outside the class or id . If you have defined box color seperately then priority will be given to the color mentioned in the class.*/
+        :root{
+            --box-color: green;
+        }
+        .box{
+            /* We can define various properties of box in variables as mentioned below so that we dont need to repeat them again and again` */
+            --box-color: black;
+            margin: 10px 10px;
+            width: 200px;
+            height: 200px;
+            box-shadow: 10px 8px var(--box-color);/*Here I used to define box shadow color with the help of box color variable.*/
+            background-color: purple;
+        }
+        .container{
+            display: flex;
+            /* background-color: var(--box-color); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

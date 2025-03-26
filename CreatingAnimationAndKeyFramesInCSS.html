@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating CSS and Animations in CSS</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            border-radius: 75px;
+            box-shadow: 25px 30px 35px black;
+            height: 125px;
+            width: 125px;
+            background-color: rgb(158, 4, 158);
+            color: white;
+            position: relative;
+            /* animation-name: abhi1; */
+            animation-name: abhi2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: forwards;/*This will pause the animation in the end. */
+            /* animation-fill-mode: alternate; /*This will revert the animation in the begin once given iteration is completed.*/
+            /* animation-timing-function: ease-in;This will start slow */
+            /* animation-timing-function: ease-out;This will end slow */
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: reverse;
+            /* This will give start and end gradual and smooth
+            */
+            /* animation-delay: 2s;This will delay the start */
+            /* animation-direction: reverse;This will start animation from the end to start. */
+            /* Undermentioned is the short hand of animation function */
+            /* animation: animation-name animation-duration animation-timing-function, animation-delay-function, animation-iteration-count animation-fill-mode;  */
+        
+        }
+
+        /* Undermentioned is the single approach to define animation. There are other approach available as mentioned below */
+        
+        @keyframes abhi1 {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 2000px;
+            }
+        }
+
+        @keyframes abhi2 {
+
+            0%{
+                top: 0;
+                left 0;
+            }
+
+            25% {
+                top: 250px;
+                left: 0;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0;
+                left: 250px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is a box.</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 23px 12px;
+            box-shadow: 5px 5px 10px 5px black; 
+            /*box-shadow: px px blur radius spread radius color;. This is how shadow defined in one line. pixel value given in above line are called offset values which spread box shadow over the box if you increase these pixels. but if you need to adjust shadow behind the box you can use inset value as defined below which will make shadow underlap the boxes.*/
+            box-shadow: inset 4px 2px red;
+            border: 2px solid red;
+            /* If you want to define multiple shadows for a box. you can write CSS as mentioned below; */
+            box-shadow: 3px 5px 8px blue, 7px 9px 10px purple;
+        }  
+          .card h1{
+            /* Under mentioned is the which helps us write text shadow */
+            text-shadow: 10px 8px 5px rgba(128, 0, 128, 0.399);
+          }   
+            
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is CSS course</h1>
+            <p>Although this is CSS course but we will keep also learn python too.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum, aperiam, porro voluptatum aliquam
+                in id maxime optio hic rerum corporis? Quibusdam porro odio vitae unde. Consequuntur ipsa impedit et
+                dolorum saepe magnam officiis.</p>
+
+        </div>
+        <div class="card" id="card-2">
+            <h1>This is Python course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum, aperiam, porro voluptatum aliquam
+                in id maxime optio hic rerum corporis? Quibusdam porro odio vitae unde. Consequuntur ipsa impedit et
+                dolorum saepe magnam officiis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum, aperiam, porro voluptatum aliquam
+                in id maxime optio hic rerum corporis? Quibusdam porro odio vitae unde. Consequuntur ipsa impedit et
+                dolorum saepe magnam officiis.</p>
+        </div>
+    </div>
+</body>
+
+</html>
